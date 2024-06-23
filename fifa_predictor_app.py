@@ -8,7 +8,7 @@ import numpy as np
 import joblib
 
 # Load the model and scaler
-model = joblib.load('model.joblib')
+model = joblib.load('https://drive.google.com/file/d/1ugPa26CQtAlO7BiEGk_kejkS-n7hRYBm/view?usp=drive_link')
 scaler = joblib.load('scaler.joblib')  # assuming the scaler was saved separately
 
 fe = ['potential', 'value_eur', 'wage_eur', 'age', 'international_reputation', 'shooting', 'passing',
