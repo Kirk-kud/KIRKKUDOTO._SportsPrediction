@@ -8,9 +8,9 @@ import requests
 url = 'https://drive.google.com/file/d/1ugPa26CQtAlO7BiEGk_kejkS-n7hRYBm/view?usp=sharing'
 output = requests.get(url)
 
-if response.status_code == 200:
+if output.status_code == 200:
     with open('model.joblib', "wb") as file:
-        file.write(response.content)
+        file.write(output.content)
         
 
 model = joblib.load('model.joblib')
