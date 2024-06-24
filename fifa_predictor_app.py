@@ -11,7 +11,7 @@ output = requests.get(url)
 if output.status_code == 200:
     with open('model.joblib', "wb") as file:
         file.write(output.content)
-        model = joblib.load('model.joblib')
+        model = joblib.load(file)
         
 scaler = joblib.load('scaler.joblib')  # assuming the scaler was saved separately
 
