@@ -5,7 +5,7 @@ import joblib
 import requests
 
 # Load the model and scaler
-url = 'https://drive.google.com/file/d/1ugPa26CQtAlO7BiEGk_kejkS-n7hRYBm/view?usp=sharing'
+url = 'https://drive.google.com/uc?export=download&id=1ugPa26CQtAlO7BiEGk_kejkS-n7hRYBm'
 output = requests.get(url)
 
 if output.status_code == 200:
