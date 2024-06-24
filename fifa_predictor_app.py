@@ -9,7 +9,7 @@ import joblib
 import requests
 
 # Load the model and scaler
-url = 'https://drive.google.com/file/d/1ugPa26CQtAlO7BiEGk_kejkS-n7hRYBm/view?usp=drive_link'
+url = 'https://drive.google.com/file/d/1ugPa26CQtAlO7BiEGk_kejkS-n7hRYBm/view?usp=sharing'
 output = requests.get(url)
 
 
