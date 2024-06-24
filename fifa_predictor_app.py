@@ -6,14 +6,14 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import joblib
-import gdown
+import requests
 
 # Load the model and scaler
 url = 'https://drive.google.com/file/d/1ugPa26CQtAlO7BiEGk_kejkS-n7hRYBm/view?usp=drive_link'
-output = 'model.joblib'
-gdown.download(url, output, quiet=False)
+output = requests.get(url)
 
-model = joblib.load(output)
+
+model = joblib.load('model.joblib')
 scaler = joblib.load('scaler.joblib')  # assuming the scaler was saved separately
 
 fe = ['potential', 'value_eur', 'wage_eur', 'age', 'international_reputation', 'shooting', 'passing',
